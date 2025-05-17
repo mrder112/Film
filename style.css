@@ -561,12 +561,29 @@ a[href]:hover,
 
 /* Обновляем стили для карточек команды */
 .team-member {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: none;
 }
 
 .team-member:hover {
-    transform: scale(1.03);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: none;
+    box-shadow: none;
+}
+
+.team-member img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .team-member:hover img {
+        transform: none !important;
+        box-shadow: none !important;
+    }
 }
 
 /* Обновляем стили для карточек программы */
