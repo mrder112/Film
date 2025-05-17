@@ -23,7 +23,7 @@ body {
     position: relative;
     background: white;
     overflow: hidden;
-    padding-bottom: 40px;
+    padding: 0 16px 40px 16px;
 }
 
 /* Гибкая сетка для отзывов, примеров работ и соц. блоков */
@@ -235,32 +235,144 @@ img, svg {
 
 /* Медиа-запросы */
 @media (max-width: 1400px) {
-    .container {
+    .Slide1693 {
         max-width: 1320px;
     }
 }
 
 @media (max-width: 1024px) {
-    .container {
+    .Slide1693 {
         max-width: 90%;
     }
     
-    .logo {
-        width: 200px;
-        height: 200px;
-        top: 120px;
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .header-center img {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    
+    .header-center div:first-of-type {
+        font-size: 2.2rem !important;
+    }
+    
+    .header-center div:nth-of-type(2) {
+        font-size: 1.3rem !important;
     }
 }
 
 @media (max-width: 900px) {
     .section-title {
         font-size: 2rem;
+        text-align: center;
+    }
+    
+    .flex-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    
+    .flex-col {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .team-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team-member {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 32px auto;
+    }
+    
+    .benefits-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .benefit-item {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 32px auto;
+    }
+    
+    .program-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .program-day {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 32px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .Slide1693 {
+        padding: 0 12px 32px 12px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin: 24px 0 16px 0;
+    }
+    
+    .header-center img {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    
+    .header-center div:first-of-type {
+        font-size: 2rem !important;
+    }
+    
+    .header-center div:nth-of-type(2) {
+        font-size: 1.2rem !important;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        font-size: 1.1rem;
+        padding: 12px 24px;
+    }
+    
+    .price-block {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .price-value {
+        font-size: 2.5rem;
+    }
+    
+    .price-desc {
+        font-size: 1.1rem;
     }
     
     .footer-socials {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         text-align: center;
+        padding: 24px 16px;
+    }
+    
+    .footer-socials .social-group,
+    .footer-socials .contacts-group {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-socials .social-icons {
+        justify-content: center;
     }
     
     .footer-socials .contacts-group {
@@ -268,190 +380,72 @@ img, svg {
         text-align: center;
     }
     
-    .Slide1693 {
-        max-width: 100vw;
-        padding: 0 8px;
+    .footer-socials .avatar {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 16px auto;
     }
     
-    .examples-row, .program-row, .flex-row {
-        flex-direction: column;
-        gap: 16px;
-    }
-    
-    .review-card, .program-day, .price-block {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        max-width: 95%;
-        padding: 0 10px;
-    }
-    
-    .logo {
-        width: 150px;
-        height: 150px;
-        top: 80px;
-    }
-    
-    .Frame5 {
-        width: 200px !important;
-        height: 60px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-    }
-    
-    .Frame5 div {
-        font-size: 24px !important;
-    }
-    
-    .team-section {
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
-    }
-    
-    .team-member {
-        align-items: center !important;
-        text-align: center !important;
-        max-width: 280px !important;
-        margin: 0 auto !important;
-    }
-    
-    .team-member div {
-        text-align: center !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-    
-    .team-member img {
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-    
-    .benefits-section {
-        align-items: center !important;
-        justify-content: center !important;
-    }
-    
-    .benefit-item {
-        align-items: center !important;
-        text-align: center !important;
-        max-width: 280px !important;
-        margin: 0 auto !important;
-    }
-    
-    .benefit-item div {
-        text-align: center !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-    
-    .shooting-desc {
-        text-align: center !important;
-        margin: 0 auto !important;
-        padding: 0 10px !important;
-        width: 100% !important;
-    }
-    
-    .examples-row {
-        gap: 24px;
-        padding: 0;
-        margin: 0 -12px;
-    }
-    
-    .example-img {
-        max-width: 100vw !important;
-        width: 100vw !important;
-        border-radius: 0 !important;
-        margin: 0 !important;
-        transform: none !important;
-        box-shadow: none !important;
-    }
-    
-    .example-img:hover {
-        transform: none !important;
-        box-shadow: none !important;
-    }
-    
-    .example-img.hide-mobile {
-        display: none !important;
-    }
-}
-
-@media (max-width: 600px) {
-    .section-title {
-        font-size: 1.3rem;
+    .footer-socials .social-group div,
+    .footer-socials .contacts-group div {
         text-align: center;
-        margin: 24px 0 8px 0;
+        width: 100%;
     }
-    
-    .Slide1693 {
-        padding: 0 2vw;
-    }
-    
-    .footer-socials {
-        padding: 16px 4px;
-    }
-    
-    .hide-mobile { display: none; }
-    .show-mobile { display: block; }
 }
 
 @media (max-width: 480px) {
-    .logo {
-        width: 120px;
-        height: 120px;
-        top: 60px;
+    .Slide1693 {
+        padding: 0 8px 24px 8px;
     }
     
-    .Frame5 {
-        width: 160px !important;
-        height: 45px !important;
+    .section-title {
+        font-size: 1.5rem;
+        margin: 20px 0 12px 0;
     }
     
-    .Frame5 div {
-        font-size: 20px !important;
+    .header-center img {
+        width: 150px !important;
+        height: 150px !important;
     }
     
-    .team-section {
-        padding: 0 20px !important;
+    .header-center div:first-of-type {
+        font-size: 1.8rem !important;
     }
     
-    .team-member {
-        width: 100% !important;
-        max-width: 100% !important;
+    .header-center div:nth-of-type(2) {
+        font-size: 1.1rem !important;
     }
     
-    .benefits-section {
-        padding: 0 20px !important;
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
     }
     
-    .benefit-item {
-        width: 100% !important;
-        max-width: 100% !important;
+    .price-value {
+        font-size: 2rem;
     }
     
-    .examples-row {
-        margin: 0 -2vw;
+    .price-desc {
+        font-size: 1rem;
     }
-}
-
-@media (max-width: 320px) {
-    .logo {
+    
+    .footer-socials {
+        padding: 16px 12px;
+    }
+    
+    .footer-socials .avatar {
         width: 100px;
         height: 100px;
-        top: 40px;
     }
     
-    .Frame5 {
-        width: 140px !important;
-        height: 40px !important;
+    .footer-socials .social-icons svg {
+        width: 40px;
+        height: 40px;
     }
     
-    .Frame5 div {
-        font-size: 18px !important;
+    .footer-socials .social-group div,
+    .footer-socials .contacts-group div {
+        font-size: 1rem;
     }
 }
 
@@ -612,6 +606,7 @@ a[href]:hover,
     overflow: hidden;
     position: relative;
     margin-bottom: 32px;
+    padding: 0 16px;
 }
 
 .reviews-scroll {
@@ -674,5 +669,283 @@ a[href]:hover,
     .review-card:hover {
         transform: none;
         box-shadow: none;
+    }
+}
+
+/* Стили для превью видео */
+.video-preview {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+    width: 80px;
+    height: 80px;
+}
+
+.play-button svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.video-preview:hover img {
+    transform: scale(1.05);
+}
+
+.video-preview:hover .play-button {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    aspect-ratio: 16/9;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.close-button {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Медиа-запросы для видео и картинок */
+@media (max-width: 768px) {
+    .examples-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 0 16px;
+    }
+
+    .video-preview {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .video-preview img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+
+    .play-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .close-button {
+        top: -35px;
+        font-size: 25px;
+    }
+
+    .video-preview:hover img,
+    .video-preview:hover .play-button {
+        transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .examples-row {
+        padding: 0 8px;
+    }
+
+    .video-preview {
+        margin: 0;
+    }
+
+    .play-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .modal-content {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .close-button {
+        top: -30px;
+        font-size: 20px;
+    }
+}
+
+/* Обновленные стили для отзывов */
+.reviews-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 32px;
+    padding: 0 16px;
+}
+
+@media (max-width: 768px) {
+    .reviews-container {
+        padding: 0 8px;
+    }
+    
+    .review-card {
+        min-width: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews-container {
+        padding: 0 4px;
+    }
+    
+    .review-card {
+        min-width: 240px;
+        padding: 16px 12px;
+    }
+    
+    .review-author {
+        font-size: 1.1rem;
+    }
+    
+    .review-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Обновленные стили для команды */
+.team-member img {
+    width: 120px !important;
+    height: 180px !important;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .team-member img {
+        width: 100px !important;
+        height: 150px !important;
+    }
+    
+    .team-member div:first-of-type {
+        font-size: 1.8rem !important;
+    }
+    
+    .team-member div:nth-of-type(2) {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member img {
+        width: 80px !important;
+        height: 120px !important;
+    }
+    
+    .team-member div:first-of-type {
+        font-size: 1.5rem !important;
+    }
+    
+    .team-member div:nth-of-type(2) {
+        font-size: 0.8rem !important;
+    }
+}
+
+/* Обновленные стили для блока "Как записаться" */
+.Group19, .Group20 {
+    width: 100%;
+    max-width: 410px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .Group19, .Group20 {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Group19, .Group20 {
+        max-width: 300px;
+    }
+}
+
+/* Обновленные стили для кнопок */
+.btn {
+    transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+    .btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* Отключаем эффекты на мобильных устройствах */
+@media (max-width: 768px) {
+    .btn:hover,
+    .team-member:hover img,
+    .program-day:hover,
+    .review-card:hover {
+        transform: none !important;
+        box-shadow: none !important;
     }
 }
