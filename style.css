@@ -321,6 +321,10 @@ img, svg {
         width: 200px !important;
         height: 200px !important;
     }
+    
+    .contact-image {
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -377,6 +381,10 @@ img, svg {
         height: 180px !important;
         margin: 0 auto;
     }
+    
+    .contact-image {
+        max-width: 250px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -394,4 +402,15 @@ img, svg {
     .Frame5 div {
         font-size: 18px !important;
     }
+}
+
+/* Контактное изображение */
+.contact-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto 24px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
