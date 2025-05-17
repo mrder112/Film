@@ -1,0 +1,397 @@
+/* Базовые сбросы и контейнер */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, Arial, sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Slide1693 {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: white;
+    overflow: hidden;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Гибкая сетка для отзывов, примеров работ и соц. блоков */
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Адаптивные заголовки */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 32px 0 16px 0;
+    text-align: left;
+}
+
+/* Адаптивные карточки отзывов */
+.review-card {
+    background: #D9D9D9;
+    border-radius: 25px;
+    padding: 24px 20px;
+    max-width: 500px;
+    min-width: 220px;
+    flex: 1 1 300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.review-author {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.review-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Примеры работ */
+.examples-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.example-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Соц. блок */
+.footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #D9D9D9;
+    border-radius: 0 0 24px 24px;
+    padding: 32px 16px;
+    margin-top: 48px;
+    gap: 24px;
+}
+
+.footer-socials .social-group,
+.footer-socials .contacts-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 180px;
+}
+
+.footer-socials .social-icons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer-socials .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 8px;
+}
+
+.footer-socials .contacts-group {
+    align-items: flex-end;
+    text-align: right;
+}
+
+/* Кнопки */
+.btn {
+    background: #FCFB8B;
+    border-radius: 10px;
+    padding: 16px 32px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    margin: 8px 0;
+    transition: background 0.2s;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #f7f65e;
+}
+
+/* Программа мероприятия */
+.program-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.program-day {
+    background: #F8F8F8;
+    border-radius: 20px;
+    padding: 24px 16px;
+    min-width: 220px;
+    max-width: 350px;
+    flex: 1 1 250px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.program-day-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #575757;
+    margin-bottom: 8px;
+}
+
+.program-day-desc {
+    font-size: 1rem;
+    color: #000;
+}
+
+/* Стоимость */
+.price-block {
+    background: #FCFB8B;
+    border-radius: 32px;
+    padding: 32px 16px;
+    max-width: 350px;
+    margin: 0 auto 32px auto;
+    text-align: center;
+}
+
+.price-value {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.price-desc {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Адаптивные изображения */
+img, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Скрыть дублирующиеся элементы */
+.hide-mobile { display: block; }
+.show-mobile { display: none; }
+
+/* Центрирование верхнего лого и заголовка */
+.header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+/* Медиа-запросы */
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    .logo {
+        width: 200px;
+        height: 200px;
+        top: 120px;
+    }
+    
+    .flex-col img[alt="Интенсив"],
+    .flex-col img[alt="Съемки"],
+    .flex-col img[alt="В ТЕСНОТЕ"] {
+        width: 220px !important;
+        height: 220px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .Slide1693 {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    .flex-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    
+    .flex-col {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .section-title {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .examples-row, .program-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    
+    .review-card, .program-day, .price-block {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 0 10px;
+    }
+    
+    .logo {
+        width: 150px;
+        height: 150px;
+        top: 80px;
+    }
+    
+    .Frame5 {
+        width: 200px !important;
+        height: 60px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+    
+    .Frame5 div {
+        font-size: 24px !important;
+    }
+    
+    .flex-col img[alt="Интенсив"],
+    .flex-col img[alt="Съемки"],
+    .flex-col img[alt="В ТЕСНОТЕ"] {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .Slide1693 {
+        padding: 0 16px;
+    }
+    
+    .flex-col {
+        max-width: 100%;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin: 24px 0;
+        text-align: center;
+    }
+    
+    .footer-socials {
+        padding: 24px 16px;
+        text-align: center;
+    }
+    
+    .footer-socials .contacts-group {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hide-mobile { 
+        display: none; 
+    }
+    
+    .show-mobile { 
+        display: block; 
+    }
+}
+
+@media (max-width: 480px) {
+    .Slide1693 {
+        padding: 0 12px;
+    }
+    
+    .flex-col {
+        padding: 0 8px;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .flex-col img[alt="Интенсив"],
+    .flex-col img[alt="Съемки"],
+    .flex-col img[alt="В ТЕСНОТЕ"] {
+        width: 180px !important;
+        height: 180px !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+        top: 40px;
+    }
+    
+    .Frame5 {
+        width: 140px !important;
+        height: 40px !important;
+    }
+    
+    .Frame5 div {
+        font-size: 18px !important;
+    }
+}
