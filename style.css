@@ -82,20 +82,26 @@ body {
     width: 100%;
 }
 
-.example-img {
+.video-preview {
     width: 100%;
     max-width: 350px;
-    height: auto;
+    margin: 0 auto;
     border-radius: 12px;
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-.example-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 1;
+.video-preview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.video-preview iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 12px;
 }
 
 /* Соц. блок */
@@ -767,7 +773,6 @@ a[href]:hover,
 /* Медиа-запросы для видео и картинок */
 @media (max-width: 768px) {
     .examples-row {
-        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 24px;
@@ -777,14 +782,11 @@ a[href]:hover,
     .video-preview {
         width: 100%;
         max-width: 100%;
-        margin: 0;
     }
 
-    .video-preview img {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16/9;
-        object-fit: cover;
+    .video-preview:hover {
+        transform: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
     .play-button {
